@@ -1,0 +1,58 @@
+.card-airline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    margin-left: 30px;
+    width: 520px;
+    height: 450px;
+    border-radius: 5px;
+    border: 1px solid #efefef;
+    box-shadow: 0px 0px 5px 0px #a2a2a2;
+    position: relative; /* Agregamos posición relativa al contenedor principal */
+  
+    .title-card-airline {
+      font-size: 16px;
+      font-family: "Roboto", sans-serif;
+      text-transform: uppercase;
+    }
+  
+    .image-card-airline {
+      margin: 5px;
+      border-radius: 5px;
+      height: 350px;
+      width: 400px;
+      object-fit: cover;
+      position: relative; /* Agregamos posición relativa a la imagen */
+  
+      &:hover {
+        cursor: pointer;
+        transform: scale(1.05);
+      }
+    }
+  }
+  
+  /* Estilos para Avianca */
+  .card-airline.avianca {
+    background-color: red; /* Cambia el color de fondo a rojo para Avianca */
+  }
+  
+  /* Estilos para Viva */
+  .card-airline.viva {
+    background-color: blue; /* Cambia el color de fondo a azul para Viva */
+  }
+  
+  .airline-information {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  
+    p {
+      font-size: 14px;
+      font-family: "Roboto", sans-serif;
+      margin: 5px;
+    }
+  }
+  
